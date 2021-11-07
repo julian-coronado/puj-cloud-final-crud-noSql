@@ -9,4 +9,11 @@ serverless deploy --aws-profile dev-personal --envrt dev
 3. probar localmente
 serverless invoke local --function addItem --aws-profile dev-personal --envrt dev --path data.json
 
+4. remove dynamodb
+
+aws dynamodb delete-table --table-name shopping-car-dev --profile dev-personal
+
+5. remove serverless stack
+
+serverless remove --aws-profile dev-personal --envrt dev
 
