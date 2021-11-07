@@ -1,0 +1,52 @@
+service: shopping-car-app
+
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  lambdaHashingVersion: 20201221
+  stage: ${opt:stage, 'dev'}
+  region: ${opt:region, 'us-east-1'}
+  environment: 
+    TABLE_SHOPPING_CAR: shopping-car-${self:provider.stage}
+    LOG_ENVIRONMENT: ${file(./serverless.env.yml):${opt:envrt}.LOGGER_ROOT_LEVEL}
+    PATH_RESOURCES: /v1/puj/allinone
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:Scan
+        - dynamodb:PutItem
+        - dynamodb:Query
+        - dynamodb:GetItem
+      Resource: arn:aws:dynamodb:us-east-1:463169607696:table/shopping-car-${self:provider.stage}
+
+functions:
+  addItem:
+    handler: handler.manageItem
+    events:
+      - http:
+          path: ${self:provider.environment.PATH_RESOURCES}/addItem
+          method: post
+    memorySize: 128
+  removeItem:
+    handler: handler.manageItem
+    events:
+      - http:
+          path: ${self:provider.environment.PATH_RESOURCES}/removeItem
+          method: post
+    memorySize: 128
+  updateItem:
+    handler: handler.manageItem
+    events:
+      - http:
+          path: ${self:provider.environment.PATH_RESOURCES}/updateItem
+          method: post
+    memorySize: 128        
+  getAllItems:
+    handler: handler.getAllItems
+    events:
+      - http:
+          path: ${self:provider.environment.PATH_RESOURCES}/getAllItems
+          method: get
+    memorySize: 128    

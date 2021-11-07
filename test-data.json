@@ -1,0 +1,121 @@
+{
+    "resource": "/v1/puj/allinone/addItem",
+    "path": "/v1/puj/allinone/addItem",
+    "httpMethod": "POST",
+    "headers": {
+        "Accept": "*/*",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Cache-Control": "no-cache",
+        "CloudFront-Forwarded-Proto": "https",
+        "CloudFront-Is-Desktop-Viewer": "true",
+        "CloudFront-Is-Mobile-Viewer": "false",
+        "CloudFront-Is-SmartTV-Viewer": "false",
+        "CloudFront-Is-Tablet-Viewer": "false",
+        "CloudFront-Viewer-Country": "CO",
+        "Content-Type": "application/json",
+        "Host": "6u7y01erxg.execute-api.us-east-1.amazonaws.com",
+        "Postman-Token": "c9aa3547-be10-4327-9cf2-3944040ee211",
+        "User-Agent": "PostmanRuntime/7.28.4",
+        "Via": "1.1 6601fbbc90b8dda94116d5c1ba488442.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Id": "A5Cxr82wKH6aYkMVcIalkiyLTmxCdI4ZB_vR0yC36SBSTq-QHT0vcQ==",
+        "X-Amzn-Trace-Id": "Root=1-61882b7c-4c5c1d56417ae7f83bead723",
+        "X-Forwarded-For": "186.81.100.82, 64.252.186.72",
+        "X-Forwarded-Port": "443",
+        "X-Forwarded-Proto": "https"
+    },
+    "multiValueHeaders": {
+        "Accept": [
+            "*/*"
+        ],
+        "Accept-Encoding": [
+            "gzip, deflate, br"
+        ],
+        "Cache-Control": [
+            "no-cache"
+        ],
+        "CloudFront-Forwarded-Proto": [
+            "https"
+        ],
+        "CloudFront-Is-Desktop-Viewer": [
+            "true"
+        ],
+        "CloudFront-Is-Mobile-Viewer": [
+            "false"
+        ],
+        "CloudFront-Is-SmartTV-Viewer": [
+            "false"
+        ],
+        "CloudFront-Is-Tablet-Viewer": [
+            "false"
+        ],
+        "CloudFront-Viewer-Country": [
+            "CO"
+        ],
+        "Content-Type": [
+            "application/json"
+        ],
+        "Host": [
+            "6u7y01erxg.execute-api.us-east-1.amazonaws.com"
+        ],
+        "Postman-Token": [
+            "c9aa3547-be10-4327-9cf2-3944040ee211"
+        ],
+        "User-Agent": [
+            "PostmanRuntime/7.28.4"
+        ],
+        "Via": [
+            "1.1 6601fbbc90b8dda94116d5c1ba488442.cloudfront.net (CloudFront)"
+        ],
+        "X-Amz-Cf-Id": [
+            "A5Cxr82wKH6aYkMVcIalkiyLTmxCdI4ZB_vR0yC36SBSTq-QHT0vcQ=="
+        ],
+        "X-Amzn-Trace-Id": [
+            "Root=1-61882b7c-4c5c1d56417ae7f83bead723"
+        ],
+        "X-Forwarded-For": [
+            "186.81.100.82, 64.252.186.72"
+        ],
+        "X-Forwarded-Port": [
+            "443"
+        ],
+        "X-Forwarded-Proto": [
+            "https"
+        ]
+    },
+    "queryStringParameters": null,
+    "multiValueQueryStringParameters": null,
+    "pathParameters": null,
+    "stageVariables": null,
+    "requestContext": {
+        "resourceId": "v0rglt",
+        "resourcePath": "/v1/puj/allinone/addItem",
+        "httpMethod": "POST",
+        "extendedRequestId": "Icu7fFJAIAMFRRw=",
+        "requestTime": "07/Nov/2021:19:39:40 +0000",
+        "path": "/dev/v1/puj/allinone/addItem",
+        "accountId": "463169607696",
+        "protocol": "HTTP/1.1",
+        "stage": "dev",
+        "domainPrefix": "6u7y01erxg",
+        "requestTimeEpoch": 1636313980575,
+        "requestId": "9748f637-11b0-4430-985d-30890a236dc7",
+        "identity": {
+            "cognitoIdentityPoolId": null,
+            "accountId": null,
+            "cognitoIdentityId": null,
+            "caller": null,
+            "sourceIp": "186.81.100.82",
+            "principalOrgId": null,
+            "accessKey": null,
+            "cognitoAuthenticationType": null,
+            "cognitoAuthenticationProvider": null,
+            "userArn": null,
+            "userAgent": "PostmanRuntime/7.28.4",
+            "user": null
+        },
+        "domainName": "6u7y01erxg.execute-api.us-east-1.amazonaws.com",
+        "apiId": "6u7y01erxg"
+    },
+    "body": "{\r\n    \"user_profile\": \"jcoronado1\",\r\n    \"item\": {\r\n        \"itemId\": \"323-ABC-XYZ-33\",\r\n        \"value\": 100,\r\n        \"qty\": 2\r\n    }\r\n}",
+    "isBase64Encoded": false
+}
