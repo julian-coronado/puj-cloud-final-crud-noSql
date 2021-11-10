@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "run addItem function",
+            "program": "${workspaceRoot}/node_modules/serverless/bin/serverless",
+            "args": [
+                "invoke",
+                "local",
+                "--function",
+                "addItem",
+                "--aws-profile",
+                "dev-personal",
+                "--envrt",
+                "dev",
+                "--path",
+                "../test-data.json"
+            ]
+        }
+    ],
+    "compounds": []
+}
